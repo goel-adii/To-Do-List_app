@@ -1,0 +1,57 @@
+<%- include("header") -%>
+<body>
+  <div class="container">
+    <div class="heading">
+      <h1>
+        <%= listTitle %>
+      </h1>
+    </div>
+
+    <div class="box" id="list-box">
+      <% newListItems.forEach(item => { %>
+
+      <form action="/delete" method="post">
+
+        <div class="item">
+          <input type="checkbox" name="checkbox" value="<%= item._id %>" onchange="this.form.submit()">
+          <p>
+            <%= item.name %>
+          </p>
+
+          <input type="hidden" name="listName" value="<%= listTitle %>">
+        </div>
+
+      </form>
+
+      <% }); %>
+
+      <form class="item" action="/" method="post">
+        <input type="text" name="newItem" placeholder="Enter New Item" autocomplete="off" />
+        <button type="submit" name="list" value="<%= listTitle %>">+</button>
+      </form>
+    </div>
+  </div>
+
+  <%- include("footer") -%>
+  <script>
+    // Function to add cool animation to list items
+    const animateListItems = () => {
+      const items = document.querySelectorAll('.item');
+  
+      items.forEach((item, index) => {
+        item.style.animation = `fadeInRight 0.5s ease-in-out ${index / 5}s`;
+      });
+    };
+  
+    // Function to add animation to heading
+    const animateHeading = () => {
+      const heading = document.querySelector('.heading');
+      heading.style.animation = 'fadeInDown 1s ease-in-out';
+    };
+  
+    // Call the animation functions on page load
+    animateHeading();
+    animateListItems();
+  </script>
+  
+</body>
