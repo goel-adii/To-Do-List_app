@@ -2,7 +2,7 @@
 
 The To-Do List App is a **Node.js, Express, MongoDB, and the EJS templating engine** based application designed to help users manage their tasks efficiently.
 
-![todo_app_preview](https://github.com/AmanKumarSinhaGitHub/To-Do-List-App/assets/65329366/3e810143-7dbd-46d5-a21d-1bea26a731dc)
+![todo_app_preview]
 
 ## Prerequisites
 Before running this project, make sure you have the following installed:
@@ -18,7 +18,7 @@ Follow these steps to set up the application:
 1. Open Powershell/Terminal and Clone the repository to your local machine:
 
    ```bash
-   git clone https://github.com/AmanKumarSinhaGitHub/To-Do-List-App.git
+   git clone https://
    ```
 
 2. Navigate to the project directory:
@@ -124,12 +124,12 @@ Additionally, I would like to express my gratitude to my instructor [Angela Yu](
 
 ## 🚀 About Me
 
-* I'm a final year BCA undergraduate and a full-stack developer.
+* I'm a final year BTECH undergraduate and a full-stack developer.
 
 
 ### Contact Details
-* Email: amankrsinha07@gmail.com
+* Email: adityagoel1011@gmail.com
 
-* LinkedIn Profile: [@AmanKumarSinha](https://www.linkedin.com/in/amankumarsinha)
+* LinkedIn Profile: [@Adityagoel](https://www.linkedin.com/in/aditya-goel-267629205)
 
 ---
