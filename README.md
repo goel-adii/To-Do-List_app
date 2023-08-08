@@ -18,13 +18,13 @@ Follow these steps to set up the application:
 1. Open Powershell/Terminal and Clone the repository to your local machine:
 
    ```bash
-   git clone https://
+   git clone https://github.com/goel-adii/To-Do-List_app.git
    ```
 
 2. Navigate to the project directory:
 
    ```bash
-   cd To-Do-List-App
+   cd To-Do-List_app
    ```
 
 3. Install the required dependencies:
@@ -62,7 +62,7 @@ To run the To-Do List App, perform the following actions:
 5. Open another PowerShell window and Navigate to the project directory:
 
    ```bash
-   cd To-Do-List-App
+   cd To-Do-List_app
    ```
 
 6. Start the application using nodemon:

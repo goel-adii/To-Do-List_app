@@ -13,7 +13,8 @@ app.use(express.static("public"));
 app.set("view engine", "ejs");
 
 // Set up default mongoose connection
-mongoose.connect(process.env.Mongo_URL);
+
+mongoose.connect(process.env.Mongourl).then((e)=>console.log("Connect"));
 
 // Mongoose Schema for individual to-do list items
 const itemSchema = new mongoose.Schema({
@@ -180,7 +181,7 @@ app.get("/:customListName", function (req, res) {
 app.get("/about", function (req, res) {
   res.render("about");
 });
-const PORT=process.env.PORT||3000;
+const PORT=process.env.PORT;
 // Start the server at Port 3000
 app.listen(PORT, function () {
   console.log("Server started on port 3000.");
